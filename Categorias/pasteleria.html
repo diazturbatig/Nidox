@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastelería y Cosas Dulces | Nidox</title>
+    <link rel="icon" href="../fotos/Nidox.png" type="image/png">
+    <link rel="stylesheet" href="categorias.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+        <div class="logo">
+            <img src="../fotos/Nidox.png" alt="Logo Nidox">
+        </div>
+
+        <div class="navegar">
+            <nav class="nav">
+                <a href="../index.html">Inicio</a>
+                <a href="#buscador">Buscador</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ================= MAIN ================= -->
+    <main>
+        <!-- ================= HERO ================= -->
+        <section class="hero-gastronomia">
+            <h1>Pastelería & Cosas Dulces</h1>
+            <p>Descubrí las mejores pastelerías, tortas artesanales, alfajores, postres y meriendas.</p>
+        </section>
+
+        <!-- ================= BUSCADOR ================= -->
+        <section class="buscador" id="buscador">
+            <h2>Buscar emprendimiento dulce</h2>
+            <p>Encontrá rápidamente lo que querés para tu merienda, evento o antojo.</p>
+            <div class="input-buscador">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="buscar" placeholder="Buscar tortas, alfajores, postres, mesas dulces...">
+            </div>
+        </section>
+
+        <!-- ================= NEGOCIOS ================= -->
+        <section class="negocios" id="negocios">
+            <h2>Todas las pastelerías y locales dulces</h2>
+            
+            <div class="contenedor-negocios">
+                
+                <!-- NEGOCIO 1 -->
+                <div class="tarjeta-negocio" data-categoria="pasteleria tortas mesas-dulces">
+                    <img src="../fotos/nutricocina.jpeg" alt="nutricocina">
+                    <div class="info-overlay">
+                        <div>
+                            <h3>Nutricocina</h3>
+                            <p class="categoria">
+                            🥖 <strong>Panaderia & Reposteria Casera</strong><br>
+                             • Pan de molde y pan árabe integral.<br>
+                             • Masa de tarta, empanadas y fajitas integrales.<br>
+                             • Prepizzas y pizzetas integrales y de trigo <br>
+                             ⁠• Cookies y budines tradiciones, de avena e integrales.
+                             </p>                           
+                             <p class="ubicacion-texto">📍 Concepción, Tucumán</p>
+                            <p class="horario">🕒 Lunes a Domingos (09:00 a 13:00 y 17:00 a 21:30 hs)</p>
+                        </div>
+                        <button onclick="abrirWhatsApp('5493865348060')"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
+                    </div>
+                </div>
+                <!-- NEGOCIO 2 -->
+                <div class="tarjeta-negocio" data-categoria="pasteleria tortas mesas-dulces">
+                    <img src="../fotos/nutricocina.jpeg" alt="nutricocina">
+                    <div class="info-overlay">
+                        <div>
+                            <h3>Nutricocina</h3>
+                            <p class="categoria">
+                            🥖 <strong>Panificación & Panadería Casera</strong><br>
+                             • Panes integrales, de avena y de trigo tradicional.<br>
+                             • Prepizzas, pizzetas, pan árabe y masas integrales.<br>
+                             • Cookies, budines caseros y fajitas.
+                             </p>                           
+                             <p class="ubicacion-texto">📍 Concepción, Tucumán</p>
+                            <p class="horario">🕒 Lunes a Domingos (09:00 a 13:00 y 17:00 a 21:30 hs)</p>
+                        </div>
+                        <button onclick="abrirWhatsApp('5493865348060')"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
+                    </div>
+                </div>
+                <!-- NEGOCIO 3 -->
+                <div class="tarjeta-negocio" data-categoria="pasteleria tortas mesas-dulces">
+                    <img src="../fotos/nutricocina.jpeg" alt="nutricocina">
+                    <div class="info-overlay">
+                        <div>
+                            <h3>Nutricocina</h3>
+                            <p class="categoria">
+                            🥖 <strong>Panificación & Panadería Casera</strong><br>
+                             • Panes integrales, de avena y de trigo tradicional.<br>
+                             • Prepizzas, pizzetas, pan árabe y masas integrales.<br>
+                             • Cookies, budines caseros y fajitas.
+                             </p>                           
+                             <p class="ubicacion-texto">📍 Concepción, Tucumán</p>
+                            <p class="horario">🕒 Lunes a Domingos (09:00 a 13:00 y 17:00 a 21:30 hs)</p>
+                        </div>
+                        <button onclick="abrirWhatsApp('5493865348060')"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
+                    </div>
+                </div>
+
+            <!-- Cartel de Sin Resultados -->
+            <p id="sin-resultados" style="display: none; text-align: center; color: #94a3b8; margin-top: 40px; font-size: 1.1rem;">
+                🔍 No encontramos cosas dulces que coincidan con tu búsqueda. ¡Intentá con otra palabra!
+            </p>
+        </section>
+
+        <!-- ================= CTA ================= -->
+        <section class="cta">
+            <h2>¿Hacés tortas, postres o tenés una pastelería?</h2>
+            <p>Sumate a Nidox y hacé que miles de personas encarguen sus meriendas y eventos con vos.</p>
+            <button class="btn-principal" onclick="location.href='https://wa.me/5493865718358?text=Hola,%20quiero%20publicar%20mi%20emprendimiento%20dulce%20en%20Nidox.'">
+                Publicar mi emprendimiento
+            </button>
+        </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer id="contacto">
+        <img src="../fotos/Nidox.png" alt="Logo Nidox">
+        <p>© 2026 Nidox - Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

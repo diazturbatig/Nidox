@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gastronomía | Nidox</title>
+    <link rel="icon" href="../fotos/Nidox.png" type="image/png">
+    <link rel="stylesheet" href="categorias.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+        <div class="logo">
+            <img src="../fotos/Nidox.png" alt="Logo Nidox">
+        </div>
+        <div class="navegar">
+            <nav class="nav">
+                <a href="../index.html">Inicio</a>
+                <a href="#buscador">Buscador</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ================= MAIN ================= -->
+    <main>
+        <!-- ================= HERO ================= -->
+        <section class="hero-gastronomia">
+            <h1>Gastronomía</h1>
+            <p>Descubrí restaurantes, pizzerías, hamburgueserías, cafeterías, rotiserías, heladerías y mucho más en un solo lugar.</p>
+        </section>
+
+        <!-- ================= BUSCADOR ================= -->
+        <section class="buscador" id="buscador">
+            <h2>Buscar negocio</h2>
+            <p>Encontrá rápidamente el comercio gastronómico que necesitás.</p>
+            <div class="input-buscador">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="buscar" placeholder="Buscar pizza, hamburguesa, cafetería, heladería...">
+            </div>
+        </section>
+
+        <!-- ================= SECCIÓN DE TARJETAS ================= -->
+        <section class="negocios" id="negocios">
+            <h2>Todos los negocios gastronómicos</h2>
+
+            <div class="contenedor-negocios varios-negocios">
+
+                <!-- NEGOCIO 1 -->
+                <div class="tarjeta-negocio" data-categoria="hamburguesa pizza empanadas" data-ubicacion="concepciom">
+                    <img src="../fotos/burgerhouse.jpeg" alt="Burguer House">
+                    <div class="info-overlay">
+                        <div>
+                            <h3>Burguer House</h3>
+                            <p class="categoria">• Hamburguesas • Pizzas • Empanadas</p>
+                            <p class="ubicacion-texto">📍 Concepción - Tucumán</p>
+                            <p class="horario">🕒 Lunes a Viernes (20:30 a 01:00 hs)<br>Sábado y Domingo (11:00 a 15:00 y 20:30 a 01:00 hs)</p>
+                        </div>
+                        <button onclick="abrirWhatsApp('5493865266862')"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
+                    </div>
+                </div>
+
+                <!-- NEGOCIO 2 -->
+                <div class="tarjeta-negocio" data-categoria="pizza empanadas" data-ubicacion="concepcion">
+                    <img src="../fotos/lacampeona.png" alt="La campeona">
+                    <div class="info-overlay">
+                        <div>
+                            <h3>La Campeona</h3>
+                            <p class="categoria">• Pizzas • Empanadas</p>
+                            <p class="ubicacion-texto">📍 Av. Vicente López y Planes 580 Concepción - Tucumán</p>
+                            <p class="horario">🕒 Pizzas: Viernes a Domingos (21:00 a 00:00) <br>Empanadas y Pizzas congeladas todos los dias.</p>
+                        </div>
+                        <button onclick="abrirWhatsApp('5493865642740')"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
+                    </div>
+                </div>
+
+                <!-- NEGOCIO 3 -->
+                <div class="tarjeta-negocio" data-categoria="cafe cafetería" data-ubicacion="concepcion">
+                    <img src="fotos/cafe.jpg" alt="Café Central">
+                    <div class="info-overlay">
+                        <div>
+                            <h3>Café Central</h3>
+                            <p class="categoria">☕ Cafetería</p>
+                            <p class="ubicacion-texto">📍 Concepción</p>
+                            <p class="horario">🕒 08:00 a 22:00</p>
+                        </div>
+                        <button onclick="abrirWhatsApp('5493865718358')"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
+                    </div>
+                </div>
+
+                <!-- NEGOCIO 4 -->
+                <div class="tarjeta-negocio" data-categoria="heladeria helado" data-ubicacion="concepcion">
+                    <img src="fotos/heladeria.jpg" alt="Heladería Italia">
+                    <div class="info-overlay">
+                        <div>
+                            <h3>Heladería Italia</h3>
+                            <p class="categoria">🍦 Heladería</p>
+                            <p class="ubicacion-texto">📍 Concepción</p>
+                            <p class="horario">🕒 10:00 a 00:00</p>
+                        </div>
+                        <button onclick="abrirWhatsApp('5493865718358')"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
+                    </div>
+                </div>
+
+                <!-- NEGOCIO 5 -->
+                <div class="tarjeta-negocio" data-categoria="rotiseria comida" data-ubicacion="concepcion">
+                    <img src="fotos/rotiseria.jpg" alt="Rotisería El Buen Sabor">
+                    <div class="info-overlay">
+                        <div>
+                            <h3>Rotisería El Buen Sabor</h3>
+                            <p class="categoria">🍗 Rotisería</p>
+                            <p class="ubicacion-texto">📍 Concepción</p>
+                            <p class="horario">🕒 11:30 a 14:30 | 20:00 a 00:00</p>
+                        </div>
+                        <button onclick="abrirWhatsApp('5493865718358')"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
+                    </div>
+                </div>
+
+                <!-- NEGOCIO 6 -->
+                <div class="tarjeta-negocio" data-categoria="panaderia pan" data-ubicacion="concepcion">
+                    <img src="fotos/panaderia.jpg" alt="Panadería San José">
+                    <div class="info-overlay">
+                        <div>
+                            <h3>Panadería San José</h3>
+                            <p class="categoria">🥖 Panadería</p>
+                            <p class="ubicacion-texto">📍 Concepción</p>
+                            <p class="horario">🕒 07:00 a 21:00</p>
+                        </div>
+                        <button onclick="abrirWhatsApp('5493865718358')"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
+                    </div>
+                </div>
+
+            </div> <!-- FIN .contenedor-negocios -->
+
+            <!-- Cartel de Sin Resultados -->
+            <p id="sin-resultados" style="display: none; text-align: center; color: #94a3b8; margin-top: 40px; font-size: 1.1rem;">
+                🔍 No encontramos negocios que coincidan con tu búsqueda. ¡Intentá con otra palabra!
+            </p>
+        </section>
+
+        <!-- ================= CTA ================= -->
+        <section class="cta">
+            <h2>¿Tenés un negocio gastronómico?</h2>
+            <p>Publicalo en Nidox y hacé que más personas descubran tu negocio todos los días.</p>
+            <button class="btn-principal" onclick="location.href='https://wa.me/5493865718358?text=Hola,%20quiero%20publicar%20mi%20negocio%20gastronómico%20en%20Nidox.'">
+                Publicar mi negocio
+            </button>
+        </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer id="contacto">
+        <img src="../fotos/Nidox.png" alt="Logo Nidox">
+        <p>© 2026 Nidox - Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Script General -->
+    <script src="script.js"></script>
+</body>
+</html>

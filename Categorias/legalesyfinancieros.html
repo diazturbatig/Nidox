@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legales y Financieros | Nidox</title>
+    <link rel="icon" href="../fotos/Nidox.png" type="image/png">
+    <link rel="stylesheet" href="categorias.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+        <div class="logo">
+            <img src="../fotos/Nidox.png" alt="Logo Nidox">
+        </div>
+
+    
+
+        <div class="navegar">
+            <nav class="nav">
+                <a href="../index.html">Inicio</a>
+                <a href="#buscador">Buscador</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ================= MAIN ================= -->
+    <main>
+        <!-- ================= HERO ================= -->
+        <section class="hero-gastronomia">
+            <h1>Legales y Financieros</h1>
+            <p>Encontrá estudios contables, abogados, escribanías, aseguradoras, gestorías y asesores financieros en un solo lugar.</p>
+        </section>
+
+        <!-- ================= BUSCADOR ================= -->
+        <section class="buscador" id="buscador">
+            <h2>Buscar profesional o estudio</h2>
+            <p>Encontrá rápidamente el servicio legal o financiero que necesitás.</p>
+            <div class="input-buscador">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="buscar" placeholder="Buscar contador, abogado, escribanía, seguros, gestoría...">
+            </div>
+        </section>
+
+        <!-- ================= NEGOCIOS ================= -->
+        <section class="negocios" id="negocios">
+            <h2>Todos los servicios legales y financieros</h2>
+            
+            <div class="contenedor-negocios">
+                <!-- SERVICIO 1 -->
+                <div class="tarjeta-negocio" data-categoria="estudio contable contador impuestos afip liquidacion">
+                    <img src="../fotos/estudio-contable.jpg" alt="Estudio Contable & Asociados">
+                    <div class="info-overlay">
+                        <div>
+                            <h3>Estudio Contable & Asociados</h3>
+                            <p class="categoria">📊 Contador • Impuestos • Asesoría PyME</p>
+                            <p class="ubicacion-texto">📍 San Martín 450, Concepción, Tucumán</p>
+                            <p class="horario">🕒 Lunes a Viernes (08:30 a 13:00 y 17:00 a 20:30 hs)</p>
+                        </div>
+                        <button onclick="abrirWhatsApp('5493865718358')"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cartel de Sin Resultados -->
+            <p id="sin-resultados" style="display: none; text-align: center; color: #94a3b8; margin-top: 40px; font-size: 1.1rem;">
+                🔍 No encontramos profesionales o estudios que coincidan con tu búsqueda. ¡Intentá con otra palabra clave!
+            </p>
+        </section>
+
+        <!-- ================= CTA ================= -->
+        <section class="cta">
+            <h2>¿Ofrecés servicios legales o financieros?</h2>
+            <p>Publicá tu estudio, agencia o servicio en Nidox y conectá con clientes de Concepción todos los días.</p>
+            <button class="btn-principal" onclick="location.href='https://wa.me/5493865718358?text=Hola,%20quiero%20publicar%20mi%20servicio%20legal%20o%20financiero%20en%20Nidox.'">
+                Publicar mi servicio
+            </button>
+        </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer id="contacto">
+        <img src="../fotos/Nidox.png" alt="Logo Nidox">
+        <p>© 2026 Nidox - Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

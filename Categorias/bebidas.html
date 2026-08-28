@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bebidas | Nidox</title>
+    <link rel="icon" href="../fotos/Nidox.png" type="image/png">
+    <link rel="stylesheet" href="categorias.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo"><img src="../fotos/Nidox.png" alt="Logo Nidox"></div>
+        <div class="navegar">
+            <nav class="nav">
+                <a href="../index.html">Inicio</a>
+                <a href="#buscador">Buscador</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-gastronomia">
+            <h1>Bebidas</h1>
+            <p>Encontrá distribuidoras, bodegas, vinotecas, cervecerías artesanales y drugstores con envíos.</p>
+        </section>
+
+        <section class="buscador" id="buscador">
+            <h2>Buscar negocio</h2>
+            <p>Encontrá rápidamente las mejores bebidas y promociones.</p>
+            <div class="input-buscador">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="buscar" placeholder="Buscar distribuidora, vinoteca, cerveza, hielo...">
+            </div>
+        </section>
+
+        <section class="negocios" id="negocios">
+            <h2>Todos los comercios de bebidas</h2>
+              <div class="contenedor-negocios">
+                <!-- NEGOCIO 1 -->
+                <div class="tarjeta-negocio" data-categoria="hamburguesa">
+                    <img src="../fotos/burgerhouse.jpeg" alt="Burguer House">
+                    <div class="info-overlay">
+                        <div>
+                            <h3>Burguer House</h3>
+                            <p class="categoria">• Hamburguesas • Pizzas • Empanadas</p>
+                            <p class="ubicacion-texto">📍 Concepción, Tucumán</p>
+                            <p class="horario">🕒 Lunes a Viernes (20:30 a 01:00 hs)<br>Sábado y Domingo (11:00 a 15:00 y 20:30 a 01:00 hs)</p>
+                        </div>
+                        <button onclick="abrirWhatsApp('5493865266862')"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
+                    </div>
+                </div>
+            </div>
+            <p id="sin-resultados" style="display: none; text-align: center; color: #94a3b8; margin-top: 40px; font-size: 1.1rem;">
+                🔍 No encontramos negocios que coincidan con tu búsqueda. ¡Intentá con otra palabra!
+            </p>
+        </section>
+
+        <section class="cta">
+            <h2>¿Tenés una distribuidora o vinoteca?</h2>
+            <p>Publicalo en Nidox y hacé que más personas descubran tu negocio todos los días.</p>
+            <button class="btn-principal" onclick="location.href='https://wa.me/5493865718358?text=Hola,%20quiero%20publicar%20mi%20negocio%20de%20bebidas%20en%20Nidox.'">
+                Publicar mi negocio
+            </button>
+        </section>
+    </main>
+
+    <footer id="contacto">
+        <img src="../fotos/Nidox.png" alt="Logo Nidox">
+        <p>© 2026 Nidox - Todos los derechos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

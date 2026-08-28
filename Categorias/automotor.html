@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automotor | Nidox</title>
+    <link rel="icon" href="../fotos/Nidox.png" type="image/png">
+    <link rel="stylesheet" href="categorias.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo"><img src="../fotos/Nidox.png" alt="Logo Nidox"></div>
+        
+        <div class="navegar">
+            <nav class="nav">
+                <a href="../index.html">Inicio</a>
+                <a href="#buscador">Buscador</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-gastronomia">
+            <h1>Automotor</h1>
+            <p>Encontrá talleres mecánicos, repuestos, lavaderos, gomerías y servicios para tu vehículo.</p>
+        </section>
+
+        <section class="buscador" id="buscador">
+            <h2>Buscar negocio</h2>
+            <p>Encontrá rápidamente lo que tu vehículo necesita.</p>
+            <div class="input-buscador">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="buscar" placeholder="Buscar taller, repuestos, gomería, lavadero...">
+            </div>
+        </section>
+
+        <section class="negocios" id="negocios">
+            <h2>Todos los negocios del sector automotor</h2>
+              <div class="contenedor-negocios">
+                <!-- NEGOCIO 1 -->
+                <div class="tarjeta-negocio" data-categoria="motos repuestos accesorios">
+                    <img src="../fotos/costar.jpeg" alt="costar">
+                    <div class="info-overlay">
+                        <div>
+                            <h3>Costar - Repuestos de motos</h3>
+                            <p class="categoria">• Contamos con los mejores precios y una amplia variedad de repuestos para tu moto.</p>
+                            <p class="ubicacion-texto">📍 Joaquín v Gonzales 523 / 24 de septiembre 1372  Concepcion - Tucuman</p>
+                            <p class="horario">🕒 Lunes a Sábados (8:30 a 13:00 y 16:30 a 21:00 hs) </p>
+                        </div>
+                        <button onclick="abrirWhatsApp('5493865445194')"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
+                    </div>
+                </div>
+            </div>
+            <p id="sin-resultados" style="display: none; text-align: center; color: #94a3b8; margin-top: 40px; font-size: 1.1rem;">
+                🔍 No encontramos negocios que coincidan con tu búsqueda. ¡Intentá con otra palabra!
+            </p>
+        </section>
+
+        <section class="cta">
+            <h2>¿Tenés un negocio del rubro automotor?</h2>
+            <p>Publicalo en Nidox y hacé que más personas descubran tu negocio todos los días.</p>
+            <button class="btn-principal" onclick="location.href='https://wa.me/5493865718358?text=Hola,%20quiero%20publicar%20mi%20negocio%20del%20rubro%20automotor%20en%20Nidox.'">
+                Publicar mi negocio
+            </button>
+        </section>
+    </main>
+
+    <footer id="contacto">
+        <img src="../fotos/Nidox.png" alt="Logo Nidox">
+        <p>© 2026 Nidox - Todos los derechos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

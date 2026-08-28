@@ -1,0 +1,404 @@
+/* ==========================================================================
+   RESET & BASE
+   ========================================================================== */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 87.5%; /* Escalado proporcional limpio sin zoom */
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background:
+        radial-gradient(circle at top left, rgba(30, 58, 138, 0.12), transparent 35%),
+        radial-gradient(circle at bottom right, rgba(37, 99, 235, 0.08), transparent 35%),
+        #0f172a;
+    color: #f8fafc;
+    line-height: 1.6;
+    background-attachment: fixed;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+main {
+    padding: 40px 8%;
+}
+
+/* ==========================================================================
+   HEADER & NAVEGACIÓN
+   ========================================================================== */
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 8%;
+    background: rgba(17, 24, 39, 0.92);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+}
+
+.logo img {
+    width: 78px;
+    height: auto;
+    display: block;
+}
+
+.ubicacion {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #94a3b8;
+    font-size: 0.95rem;
+}
+
+.ubicacion i {
+    color: #3b82f6;
+}
+
+.navegar {
+    display: flex;
+}
+
+.nav {
+    display: flex;
+    gap: 28px;
+}
+
+.nav a {
+    color: #e2e8f0;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.25s ease;
+}
+
+.nav a:hover {
+    color: #3b82f6;
+}
+
+/* ==========================================================================
+   MAIN & HERO GASTRONOMÍA
+   ========================================================================== */
+.hero-gastronomia {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.hero-gastronomia h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+    line-height: 1.2;
+}
+
+.hero-gastronomia p {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #94a3b8;
+    font-size: 1.1rem;
+}
+
+/* ==========================================================================
+   BUSCADOR
+   ========================================================================== */
+.buscador {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.buscador h2 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.buscador p {
+    color: #94a3b8;
+    margin-bottom: 30px;
+}
+
+.input-buscador {
+    max-width: 650px;
+    margin: 0 auto;
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    padding: 14px 20px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-buscador:focus-within {
+    border-color: #2563eb;
+    box-shadow: 0 0 12px rgba(37, 99, 235, 0.2);
+}
+
+.input-buscador i {
+    color: #3b82f6;
+    font-size: 1.2rem;
+}
+
+.input-buscador input {
+    flex: 1;
+    margin-left: 15px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.input-buscador input::placeholder {
+    color: #94a3b8;
+}
+
+/* ==========================================================================
+   TARJETAS DE NEGOCIOS GASTRONÓMICOS
+   ========================================================================== */
+.negocios {
+    margin-top: 40px;
+    padding-bottom: 60px;
+}
+
+.negocios h2 {
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+.contenedor-negocios {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 280px));
+    gap: 20px;
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.tarjeta-negocio {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    background: #111827;
+    border: 1px solid #334155;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta-negocio:hover {
+    transform: translateY(-4px);
+    border-color: #2563eb;
+    box-shadow: 0 10px 24px rgba(37, 99, 235, 0.25);
+}
+
+.tarjeta-negocio img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border-bottom: 1px solid #1e293b;
+}
+
+.info-overlay {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background: #111827;
+}
+
+.info-overlay h3 {
+    font-size: 1.15rem;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #ffffff;
+}
+
+.info-overlay .categoria {
+    font-size: 0.82rem;
+    color: #94a3b8;
+}
+
+.info-overlay .ubicacion-texto {
+    font-size: 0.8rem;
+    color: #cbd5e1;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.info-overlay .horario {
+    font-size: 0.78rem;
+    line-height: 1.35;
+    color: #cbd5e1;
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+}
+
+.info-overlay button {
+    margin-top: 6px;
+    width: 100%;
+    padding: 10px 14px;
+    border-radius: 10px;
+    background: #2563eb;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 0.85rem;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.info-overlay button:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+}
+
+/* ==========================================================================
+   CALL TO ACTION (CTA)
+   ========================================================================== */
+.cta {
+    margin-top: 90px;
+    background: #111827;
+    border: 1px solid #334155;
+    border-radius: 16px;
+    padding: 60px 30px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+.cta h2 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.cta p {
+    max-width: 700px;
+    margin: 0 auto 25px;
+    color: #94a3b8;
+}
+
+.btn-principal {
+    padding: 14px 28px;
+    border: none;
+    border-radius: 12px;
+    background: #2563eb;
+    color: #ffffff;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-principal:hover {
+    background: #1d4ed8;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(37, 99, 235, 0.4);
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+footer {
+    margin-top: 90px;
+    padding: 40px 8%;
+    background: #111827;
+    border-top: 1px solid #243244;
+    text-align: center;
+}
+
+footer img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+footer p {
+    color: #94a3b8;
+    font-size: 0.95rem;
+}
+
+/* ==========================================================================
+   SCROLLBAR PERSONALIZADO
+   ========================================================================== */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #111827;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2563eb;
+    border-radius: 20px;
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN
+   ========================================================================== */
+@media (max-width: 992px) {
+    .header {
+        position: static;
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+    }
+
+    .nav {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 100%;
+    }
+
+    main {
+        padding: 24px 5%;
+    }
+
+    .hero-gastronomia h1 {
+        font-size: 2.2rem;
+    }
+
+    .buscador h2 {
+        font-size: 1.6rem;
+    }
+
+    .contenedor-negocios {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 20px;
+    }
+
+    .cta {
+        padding: 40px 20px;
+    }
+
+    .btn-principal {
+        width: 100%;
+    }
+}

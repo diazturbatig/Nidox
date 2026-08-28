@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nidox | Impulsamos negocios locales</title>
+    <meta name="description" content="Nidox ayuda a los negocios y emprendedores de Concepción, Tucumán, a tener su propia página web y mejorar su visibilidad digital.">
+    
+    <!-- Open Graph para redes sociales y WhatsApp -->
+    <meta property="og:title" content="Nidox | Impulsamos negocios locales">
+    <meta property="og:description" content="Encontrá los mejores comercios y profesionales de Concepción, Tucumán en un solo lugar.">
+    <meta property="og:image" content="fotos/Nidox.png">
+    
+    <link rel="icon" href="fotos/Nidox.png" type="image/png">
+    <link rel="stylesheet" href="estilos/style.css?v=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header>
+        <div class="logo">
+            <img src="./fotos/Nidox.png" alt="Logo Nidox">
+        </div>
+
+        <!-- SELECTOR DE UBICACIÓN INTEGRADO -->
+        <div class="ubicacion">
+            <i class="fa-solid fa-location-dot"></i>
+            <select id="select-ubicacion">
+                <option value="todas">Todas las ubicaciones</option>
+                <option value="concepcion">Concepción</option>
+                <option value="aguilares">Aguilares</option>
+                <option value="monteros">Monteros</option>
+            </select>
+        </div>
+
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#beneficios">Beneficios</a>
+            <a href="vernegocio.html">Categorías</a>
+            <a href="#negocios">Negocios</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main>
+        <!-- ================= HERO ================= -->
+        <section class="hero">
+            <div class="hero-texto">
+                <span class="etiqueta">Impulsando el comercio local</span>
+                <h1>Tu negocio merece llegar a más personas.</h1>
+                <p>
+                    En Nidox creamos una tarjeta interactiva para tu negocio, la publicamos dentro de nuestra plataforma y te ayudamos a conseguir mayor visibilidad para que los clientes te contacten directo a tu WhatsApp.
+                </p>
+                <div class="hero-botones">
+                    <button class="btn-principal" onclick="window.open('https://wa.me/5493865718358?text=Hola,%20quiero%20publicar%20mi%20negocio%20en%20Nidox.', '_blank')">
+                        Quiero publicar mi negocio
+                    </button>  
+                    <a href="vernegocio.html" class="btn-secundario">Ver Negocios</a>
+                </div>
+            </div>
+            <div class="hero-imagen">
+                <img src="./fotos/Nidox.png" alt="Nidox">
+            </div>
+        </section>
+
+        <!-- ================= ¿QUÉ ES NIDOX? ================= -->
+        <section class="presentacion">
+            <h2>¿Qué es Nidox?</h2>
+            <p class="subtitulo">
+                Nidox es una plataforma creada para ayudar a emprendedores y comercios
+                a tener presencia digital sin complicaciones. Nos encargamos de crear una tarjeta interactiva para tu negocio,
+                publicarla dentro de Nidox y mantener toda la información actualizada.
+            </p>
+            <div class="presentacion-cards">
+                <div class="card">
+                    <i class="fa-solid fa-globe"></i>
+                    <h3>Tarjeta Interactiva</h3>
+                    <p>Creamos una tarjeta interactiva para que tus clientes puedan conocer tu negocio.</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-bullhorn"></i>
+                    <h3>Mayor Visibilidad</h3>
+                    <p>Promocionamos tu negocio para que más personas puedan descubrirlo.</p>
+                </div>
+                <div class="card">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <h3>Contacto Directo</h3>
+                    <p>Tus clientes podrán comunicarse rápidamente con vos mediante WhatsApp.</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                    <h3>Mantenimiento</h3>
+                    <p>Nosotros realizamos las modificaciones y mantenemos tu tarjeta siempre actualizada.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= CÓMO FUNCIONA ================= -->
+        <section class="funciona">
+            <h2>¿Cómo funciona?</h2>
+            <p class="subtitulo">Comenzar en Nidox es rápido y sencillo.</p>
+            <div class="pasos">
+                <div class="paso">
+                    <div class="numero">1</div>
+                    <h3>Nos escribís</h3>
+                    <p>Te contactás con nosotros por WhatsApp o redes sociales.</p>
+                </div>
+                <div class="paso">
+                    <div class="numero">2</div>
+                    <h3>Enviás tu información</h3>
+                    <p>Nos enviás el nombre del negocio, logo, fotos, horarios, ubicación y datos de contacto.</p>
+                </div>
+                <div class="paso">
+                    <div class="numero">3</div>
+                    <h3>Creamos tu tarjeta</h3>
+                    <p>Diseñamos una tarjeta interactiva moderna dentro de Nidox adaptada a tu negocio.</p>
+                </div>
+                <div class="paso">
+                    <div class="numero">4</div>
+                    <h3>La publicamos</h3>
+                    <p>Tu negocio queda disponible para miles de personas y nosotros seguimos administrándolo.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= BENEFICIOS ================= -->
+        <section class="beneficios" id="beneficios">
+            <h2>¿Por qué elegir Nidox?</h2>
+            <p class="subtitulo">Nos ocupamos de que tu negocio tenga una presencia digital profesional para que vos solo te concentres en vender.</p>
+            <div class="beneficios-grid">
+                <div class="beneficio">
+                    <i class="fa-solid fa-store"></i>
+                    <h3>Más presencia</h3>
+                    <p>Tu negocio tendrá un espacio profesional disponible las 24 horas.</p>
+                </div>
+                <div class="beneficio">
+                    <i class="fa-solid fa-users"></i>
+                    <h3>Más clientes</h3>
+                    <p>Más personas podrán conocer tus productos y servicios.</p>
+                </div>
+                <div class="beneficio">
+                    <i class="fa-solid fa-mobile-screen"></i>
+                    <h3>WhatsApp integrado</h3>
+                    <p>Los clientes podrán contactarte rápidamente con un solo clic.</p>
+                </div>
+                <div class="beneficio">
+                    <i class="fa-solid fa-pen-ruler"></i>
+                    <h3>Diseño moderno</h3>
+                    <p>Tu tarjeta tendrá una imagen profesional y adaptada a celulares.</p>
+                </div>
+                <div class="beneficio">
+                    <i class="fa-solid fa-gears"></i>
+                    <h3>Mantenimiento</h3>
+                    <p>Nos encargamos de realizar los cambios cuando los necesites.</p>
+                </div>
+                <div class="beneficio">
+                    <i class="fa-solid fa-bullhorn"></i>
+                    <h3>Publicidad</h3>
+                    <p>Promocionamos tu negocio para aumentar su alcance.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= NEGOCIOS DESTACADOS ================= -->
+        <section class="negocios" id="negocios">
+            <h2>Negocios Destacados</h2>
+            <p class="subtitulo">Algunos de los comercios que ya forman parte de Nidox.</p>
+            <div class="varios-negocios">
+                <article class="card-negocio">
+                    <img src="./fotos/zephon.png" alt="Reparacion">
+                    <div class="contenido">
+                        <h3> 📱🔧Reparación de Celulares</h3>
+                        <p> Cambio de módulos, baterías, placas de carga y demás reparaciones en general.</p>
+                        <span><i class="fa-solid fa-location-dot"></i> 24 de Septiembre 1721 (Concepción)</span>
+                        <span><i class="fa-solid fa-clock"></i> Todos los días · 24 hs</span>
+                        <button onclick="abrirWhatsApp('5493865210007')">WhatsApp</button>
+                    </div>
+                </article>
+                <article class="card-negocio">
+                    <img src="./fotos/mecanico.png" alt="Mecanico dental">
+                    <div class="contenido2">
+                        <h3>🦷 Mecánico Dental - Maria De Los Angeles Abraham</h3>
+                        <p>Prótesis completas, removibles y flexibles.Agregado y reparación de dientes, arañitas, rebasados y limpieza de prótesis.</p>
+                        <span><i class="fa-solid fa-location-dot"></i> La Pampa 530 (Concepción)</span>
+                        <span><i class="fa-solid fa-clock"></i> Por consultas</span>
+                        <button onclick="abrirWhatsApp('5493865231658')">WhatsApp</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ================= CTA ================= -->
+        <section class="cta" id="contacto">
+            <h2>¿Querés que tu negocio aparezca en Nidox?</h2>
+            <p>Nosotros diseñamos tu tarjeta, la publicamos dentro de la plataforma y realizamos el mantenimiento para que siempre esté actualizada.</p>
+            <button class="btn-principal" onclick="window.open('https://wa.me/5493865718358?text=Hola,%20quiero%20publicar%20mi%20negocio%20en%20Nidox.', '_blank')">
+                Solicitar más información
+            </button>  
+        </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <div class="footer-logo">
+            <img src="./fotos/Nidox.png" alt="Nidox">
+            <p>Impulsando negocios locales mediante presencia digital profesional.</p>
+        </div>
+        <div class="footer-links">
+            <h3>Navegación</h3>
+            <a href="#">Inicio</a>
+            <a href="vernegocio.html">Categorías</a>
+            <a href="#negocios">Negocios</a>
+            <a href="#contacto">Contacto</a>
+        </div>
+        <div class="footer-contacto">
+            <h3>Contacto</h3>
+            <p><i class="fa-solid fa-location-dot"></i> Concepción, Tucumán</p>
+            <p><i class="fa-brands fa-whatsapp"></i> 3865-718358</p>
+            <p><i class="fa-solid fa-envelope"></i> Giuliano@outlook.com</p>
+        </div>
+    </footer>
+    <script src="./Categorias/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,326 @@
+CSS
+/* ==========================================================================
+   RESET & BASE
+   ========================================================================== */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 87.5%; /* Escalado proporcional equivalente sin romper navegadores */
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background:
+        radial-gradient(circle at top left, #1e3a8a20, transparent 35%),
+        radial-gradient(circle at bottom right, #2563eb15, transparent 35%),
+        #0f172a;
+    color: #f8fafc;
+    line-height: 1.6;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+main {
+    padding: 40px 8%;
+}
+
+/* ==========================================================================
+   HEADER & NAVEGACIÓN
+   ========================================================================== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8%;
+    background: rgba(17, 24, 39, 0.92);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header img {
+    width: 78px;
+    height: auto;
+}
+
+.ubicacion {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #94a3b8;
+    font-size: 0.95rem;
+}
+
+.ubicacion i {
+    color: #3b82f6;
+}
+
+nav {
+    display: flex;
+    gap: 28px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #e2e8f0;
+    font-weight: 600;
+    transition: color 0.25s ease;
+}
+
+nav a:hover {
+    color: #3b82f6;
+}
+
+/* ==========================================================================
+   HERO SECCIÓN NEGOCIOS
+   ========================================================================== */
+.hero-negocios {
+    min-height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.hero-negocios h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+    line-height: 1.2;
+}
+
+.hero-negocios p {
+    max-width: 700px;
+    color: #94a3b8;
+    font-size: 1.1rem;
+}
+
+/* ==========================================================================
+   CATEGORÍAS
+   ========================================================================== */
+.categorias {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.categorias h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.subtitulo {
+    color: #94a3b8;
+    margin-bottom: 45px;
+    font-size: 1rem;
+}
+
+.categorias-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+}
+
+.categoria {
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 16px;
+    padding: 35px 20px;
+    text-decoration: none;
+    color: #f8fafc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.categoria i {
+    font-size: 2.5rem;
+    color: #3b82f6;
+    margin-bottom: 18px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.categoria h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/* Manejo de iconos múltiples dentro de tarjeta */
+.categoria .iconos-categoria {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.categoria .iconos-categoria i {
+    font-size: 1.8rem;
+    color: #3b82f6;
+    margin-bottom: 0;
+}
+
+/* Hover interactivo unificado */
+.categoria:hover {
+    background: #2563eb;
+    border-color: #2563eb;
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(37, 99, 235, 0.3);
+}
+
+.categoria:hover i,
+.categoria:hover .iconos-categoria i {
+    color: #ffffff;
+    transform: scale(1.08);
+}
+
+/* ==========================================================================
+   CALL TO ACTION & BOTONES
+   ========================================================================== */
+.cta {
+    margin-top: 90px;
+    background: #111827;
+    border: 1px solid #334155;
+    border-radius: 16px;
+    padding: 60px 40px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+.cta h2 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.cta p {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    color: #94a3b8;
+    font-size: 1.05rem;
+}
+
+.btn-principal {
+    padding: 14px 28px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 700;
+    background: #2563eb;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.btn-principal:hover {
+    background: #1d4ed8;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.4);
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+footer {
+    margin-top: 90px;
+    padding: 40px 8%;
+    background: #111827;
+    border-top: 1px solid #243244;
+    text-align: center;
+}
+
+footer img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+footer p {
+    color: #94a3b8;
+    font-size: 0.95rem;
+}
+
+/* ==========================================================================
+   SCROLLBAR PERSONALIZADO
+   ========================================================================== */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #111827;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2563eb;
+    border-radius: 20px;
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN
+   ========================================================================== */
+@media (max-width: 768px) {
+    html {
+        font-size: 100%;
+    }
+
+    main {
+        padding: 24px 5%;
+    }
+
+    header {
+        position: static;
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .hero-negocios h1 {
+        font-size: 2.2rem;
+    }
+
+    .categorias-grid {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 16px;
+    }
+
+    .categoria {
+        padding: 25px 15px;
+    }
+
+    .categoria i {
+        font-size: 2rem;
+        margin-bottom: 12px;
+    }
+
+    .categoria h3 {
+        font-size: 1rem;
+    }
+
+    .cta {
+        padding: 45px 20px;
+    }
+
+    .btn-principal {
+        width: 100%;
+    }
+}

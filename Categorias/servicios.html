@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios Técnicos y Oficios | Nidox</title>
+    <link rel="icon" href="../fotos/Nidox.png" type="image/png">
+    <link rel="stylesheet" href="categorias.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo"><img src="../fotos/Nidox.png" alt="Logo Nidox"></div>
+        <div class="navegar">
+           <nav class="nav">
+                <a href="../index.html">Inicio</a>
+                <a href="#buscador">Buscador</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-gastronomia">
+            <h1>Servicios Técnicos y Oficios</h1>
+            <p>Encontrá electricistas, plomeros, gasistas, técnicos en computación, reparación de celulares y más.</p>
+        </section>
+
+        <section class="buscador" id="buscador">
+            <h2>Buscar servicio u oficio</h2>
+            <p>Soluciones rápidas con técnicos confiables en la zona.</p>
+            <div class="input-buscador">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="buscar" placeholder="Buscar electricista, plomero, aire acondicionado, servicio técnico...">
+            </div>
+        </section>
+
+        <section class="negocios" id="negocios">
+            <h2>Listado de servicios y técnicos independientes</h2>
+
+            <div class="contenedor-negocios">
+                <!-- NEGOCIO 1 -->
+                <div class="tarjeta-negocio" data-categoria="reparaciones de celulares">
+                    <img src="../fotos/zephon.png" alt="zephon">
+                    <div class="info-overlay">
+                        <div>
+                            <h3>Reparación de Celulares</h3>
+                            <p class="categoria">• Cambio de módulos, baterías, placas de carga y reparación en general.</p>
+                            <p class="ubicacion-texto">📍 24 de Septiembre 1721, Concepción - Tucumán</p>
+                            <p class="horario">🕒 Pedí presupuesto sin cargo - 24hs</p>
+                        </div>
+                        <button onclick="abrirWhatsApp('5493865210007')"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
+                    </div>
+                </div>
+                <!-- NEGOCIO 2 -->
+                <div class="tarjeta-negocio" data-categoria="reparaciones de celulares">
+                    <img src="../fotos/zephon.png" alt="zephon">
+                    <div class="info-overlay">
+                        <div>
+                            <h3>Reparación de Celulares</h3>
+                            <p class="categoria">• Cambio de módulos, baterías, placas de carga y reparación en general.</p>
+                            <p class="ubicacion-texto">📍 24 de Septiembre 1721, Concepción - Tucumán</p>
+                            <p class="horario">🕒 Pedí presupuesto sin cargo - 24hs</p>
+                        </div>
+                        <button onclick="abrirWhatsApp('5493865210007')"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
+                    </div>
+                </div>
+                <!-- NEGOCIO 3-->
+                <div class="tarjeta-negocio" data-categoria="reparaciones de celulares">
+                    <img src="../fotos/zephon.png" alt="zephon">
+                    <div class="info-overlay">
+                        <div>
+                            <h3>Reparación de Celulares</h3>
+                            <p class="categoria">• Cambio de módulos, baterías, placas de carga y reparación en general.</p>
+                            <p class="ubicacion-texto">📍 24 de Septiembre 1721, Concepción - Tucumán</p>
+                            <p class="horario">🕒 Pedí presupuesto sin cargo - 24hs</p>
+                        </div>
+                        <button onclick="abrirWhatsApp('5493865210007')"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
+                    </div>
+                </div>
+            </div>
+            <p id="sin-resultados" style="display: none; text-align: center; color: #94a3b8; margin-top: 40px; font-size: 1.1rem;">
+                🔍 No encontramos servicios que coincidan con tu búsqueda. ¡Intentá con otra palabra!
+            </p>
+        </section>
+
+        <section class="cta">
+            <h2>¿Ofrecés algún servicio técnico u oficio?</h2>
+            <p>Publicalo en Nidox y hacé que más personas te contacten todos los días.</p>
+            <button class="btn-principal" onclick="location.href='https://wa.me/5493865718358?text=Hola,%20quiero%20publicar%20mi%20servicio%20técnico%20en%20Nidox.'">
+                Publicar mi servicio
+            </button>
+        </section>
+    </main>
+
+    <footer id="contacto">
+        <img src="../fotos/Nidox.png" alt="Logo Nidox">
+        <p>© 2026 Nidox - Todos los derechos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnología y Diseño | Nidox</title>
+    <link rel="icon" href="../fotos/Nidox.png" type="image/png">
+    <link rel="stylesheet" href="categorias.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+        <div class="logo">
+            <img src="../fotos/Nidox.png" alt="Logo Nidox">
+        </div>
+
+        
+
+        <div class="navegar">
+            <nav class="nav">
+                <a href="../index.html">Inicio</a>
+                <a href="#buscador">Buscador</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ================= MAIN ================= -->
+    <main>
+        <!-- ================= HERO ================= -->
+        <section class="hero-gastronomia">
+            <h1>Tecnología y Diseño</h1>
+            <p>Descubrí profesionales y agencias de Programación, Diseño Gráfico, Marketing Digital, Edición de Video, Fotografía y Producción Digital en un solo lugar.</p>
+        </section>
+
+        <!-- ================= BUSCADOR ================= -->
+        <section class="buscador" id="buscador">
+            <h2>Buscar profesional o agencia</h2>
+            <p>Encontrá rápidamente el servicio digital o creativo que necesitás para tu marca o proyecto.</p>
+            <div class="input-buscador">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="buscar" placeholder="Buscar desarrollo web, logos, marketing, edicion de video, foto producto, copywriting...">
+            </div>
+        </section>
+
+        <!-- ================= NEGOCIOS ================= -->
+        <section class="negocios" id="negocios">
+            <h2>Todos los servicios de Tecnología y Diseño</h2>
+            
+            <div class="contenedor-negocios">
+                <!-- SERVICIO 1 -->
+                <div class="tarjeta-negocio" data-categoria="programacion desarrollo web paginas sistemas software ecommerce">
+                    <img src="../fotos/desarrollo-web.jpg" alt="DevStudio Web">
+                    <div class="info-overlay">
+                        <div>
+                            <h3>DevStudio Web</h3>
+                            <p class="categoria">💻 Programación • Sitios Web • Sistemas A Medida</p>
+                            <p class="ubicacion-texto">📍 Concepción, Tucumán</p>
+                            <p class="horario">🕒 Lunes a Viernes (09:00 a 18:00 hs)</p>
+                        </div>
+                        <button onclick="abrirWhatsApp('5493865718358')"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
+                    </div>
+                </div>
+
+                <!-- SERVICIO 2 -->
+                <div class="tarjeta-negocio" data-categoria="diseno grafico branding logos identidad visual ilustracion">
+                    <img src="../fotos/diseno-grafico.jpg" alt="Estudio Nova Diseño">
+                    <div class="info-overlay">
+                        <div>
+                            <h3>Estudio Nova Diseño</h3>
+                            <p class="categoria">🎨 Diseño Gráfico • Branding • Identidad de Marca</p>
+                            <p class="ubicacion-texto">📍 España 410, Concepción - Tucumán</p>
+                            <p class="horario">🕒 Lunes a Viernes (09:00 a 13:00 y 17:00 a 20:00 hs)</p>
+                        </div>
+                        <button onclick="abrirWhatsApp('5493865718358')"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
+                    </div>
+                </div>
+
+                <!-- SERVICIO 3 -->
+                <div class="tarjeta-negocio" data-categoria="marketing digital redes sociales community manager publicidad ads">
+                    <img src="../fotos/marketing-digital.jpg" alt="Agencia Elevate MKT">
+                    <div class="info-overlay">
+                        <div>
+                            <h3>Agencia Elevate MKT</h3>
+                            <p class="categoria">🚀 Marketing Digital • Redes Sociales • Publicidad Online</p>
+                            <p class="ubicacion-texto">📍 Concepción, Tucumán</p>
+                            <p class="horario">🕒 Lunes a Viernes (09:00 a 18:00 hs)</p>
+                        </div>
+                        <button onclick="abrirWhatsApp('5493865718358')"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
+                    </div>
+                </div>
+
+                <!-- SERVICIO 4 -->
+                <div class="tarjeta-negocio" data-categoria="edicion video reels tiktok motion graphics animacion audiovisual postproduccion">
+                    <img src="../fotos/edicion-video.jpg" alt="Focus Video Edit">
+                    <div class="info-overlay">
+                        <div>
+                            <h3>Focus Video Studio</h3>
+                            <p class="categoria">🎬 Edición de Video • Reels / TikToks • Motion Graphics</p>
+                            <p class="ubicacion-texto">📍 Concepción, Tucumán</p>
+                            <p class="horario">🕒 Lunes a Viernes (09:00 a 19:00 hs)</p>
+                        </div>
+                        <button onclick="abrirWhatsApp('5493865718358')"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
+                    </div>
+                </div>
+
+                <!-- SERVICIO 5 -->
+                <div class="tarjeta-negocio" data-categoria="fotografia producto catalogo e-commerce comercial fotos redes">
+                    <img src="../fotos/fotografia-producto.jpg" alt="Lumina Foto Producto">
+                    <div class="info-overlay">
+                        <div>
+                            <h3>Lumina Fotografía</h3>
+                            <p class="categoria">📸 Fotografía de Producto • Catálogos • E-commerce</p>
+                            <p class="ubicacion-texto">📍 Concepción, Tucumán</p>
+                            <p class="horario">🕒 Lunes a Sábado (09:00 a 18:00 hs)</p>
+                        </div>
+                        <button onclick="abrirWhatsApp('5493865718358')"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
+                    </div>
+                </div>
+
+                <!-- SERVICIO 6 -->
+                <div class="tarjeta-negocio" data-categoria="copywriting redaccion textos webs guiones articulos blogs contenido">
+                    <img src="../fotos/copywriting.jpg" alt="WordCraft Copywriting">
+                    <div class="info-overlay">
+                        <div>
+                            <h3>WordCraft Copywriting</h3>
+                            <p class="categoria">✍️ Redacción Creativa • Copywriting • Guiones</p>
+                            <p class="ubicacion-texto">📍 Concepción, Tucumán</p>
+                            <p class="horario">🕒 Lunes a Viernes (09:00 a 17:00 hs)</p>
+                        </div>
+                        <button onclick="abrirWhatsApp('5493865718358')"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
+                    </div>
+                </div>
+
+                <!-- SERVICIO 7 -->
+                <div class="tarjeta-negocio" data-categoria="programacion aplicaciones mobile app ios android mobile">
+                    <img src="../fotos/app-developer.jpg" alt="CodeApp Solutions">
+                    <div class="info-overlay">
+                        <div>
+                            <h3>CodeApp Solutions</h3>
+                            <p class="categoria">📱 Desarrollo de Apps Móviles (iOS & Android)</p>
+                            <p class="ubicacion-texto">📍 Concepción, Tucumán</p>
+                            <p class="horario">🕒 Lunes a Viernes (08:30 a 17:30 hs)</p>
+                        </div>
+                        <button onclick="abrirWhatsApp('5493865718358')"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
+                    </div>
+                </div>
+
+                <!-- SERVICIO 8 -->
+                <div class="tarjeta-negocio" data-categoria="audio podcast locucion jingles sonido edicion musical">
+                    <img src="../fotos/audio-podcast.jpg" alt="SoundLab Producciones">
+                    <div class="info-overlay">
+                        <div>
+                            <h3>SoundLab Producciones</h3>
+                            <p class="categoria">🎙️ Edición de Audio • Podcasts • Locución Comercial</p>
+                            <p class="ubicacion-texto">📍 Concepción, Tucumán</p>
+                            <p class="horario">🕒 Lunes a Viernes (10:00 a 19:00 hs)</p>
+                        </div>
+                        <button onclick="abrirWhatsApp('5493865718358')"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cartel de Sin Resultados -->
+            <p id="sin-resultados" style="display: none; text-align: center; color: #94a3b8; margin-top: 40px; font-size: 1.1rem;">
+                🔍 No encontramos profesionales o agencias que coincidan con tu búsqueda. ¡Intentá con otra palabra clave!
+            </p>
+        </section>
+
+        <!-- ================= CTA ================= -->
+        <section class="cta">
+            <h2>¿Ofrecés servicios creativos o digitales?</h2>
+            <p>Publicá tu portafolio, agencia o servicio freelance en Nidox para que marcas y clientes de Concepción te encuentren fácilmente.</p>
+            <button class="btn-principal" onclick="location.href='https://wa.me/5493865718358?text=Hola,%20quiero%20publicar%20mi%20servicio%20en%20Tecnolog%C3%ADa%20y%20Dise%C3%B1o%20en%20Nidox.'">
+                Publicar mi servicio
+            </button>
+        </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer id="contacto">
+        <img src="../fotos/Nidox.png" alt="Logo Nidox">
+        <p>© 2026 Nidox - Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
