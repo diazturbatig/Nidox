@@ -213,67 +213,94 @@ main {
     border-bottom: 1px solid #1e293b;
 }
 
+/* Contenedor principal de la información */
 .info-overlay {
-    padding: 16px;
+    padding: 20px 18px;
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    background: #111827;
+    flex-grow: 1; /* Absorbe el espacio sobrante para alinear las tarjetas */
+    text-align: left;
 }
 
+/* 1. TÍTULO DEL NEGOCIO */
 .info-overlay h3 {
-    font-size: 1.15rem;
-    text-align: center;
+    font-size: 1.25rem; /* 20px */
     font-weight: 700;
-    line-height: 1.2;
+    line-height: 1.25;
     color: #ffffff;
+    letter-spacing: -0.015em;
+    margin: 0 0 12px 0; /* Separa el título de la caja de categorías */
+    text-align: left;
 }
 
+/* 2. CAJA DE CATEGORÍAS / ESPECIALIDADES */
 .info-overlay .categoria {
-    font-size: 0.82rem;
+    font-size: 0.813rem; /* 13px */
+    font-weight: 400;
+    line-height: 1.5;
     color: #94a3b8;
+    margin: 0 0 16px 0; /* Separa la caja de la ubicación */
+    padding: 9px 12px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 10px;
+    backdrop-filter: blur(4px);
 }
 
+/* 3. UBICACIÓN (Texto resaltado para lectura rápida) */
 .info-overlay .ubicacion-texto {
-    font-size: 0.8rem;
-    color: #cbd5e1;
-    display: flex;
-    align-items: center;
-    gap: 4px;
-}
-
-.info-overlay .horario {
-    font-size: 0.78rem;
-    line-height: 1.35;
-    color: #cbd5e1;
+    font-size: 0.845rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #f1f5f9; /* Casi blanco para que resalte la dirección */
     display: flex;
     align-items: flex-start;
-    gap: 6px;
+    gap: 8px;
+    margin: 0 0 8px 0; /* Separa la ubicación del horario */
 }
 
+/* 4. HORARIOS (Información complementaria) */
+.info-overlay .horario {
+    font-size: 0.78rem;
+    font-weight: 400;
+    line-height: 1.45;
+    color: #64748b; /* Gris tenue elegante */
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin: 0 0 16px 0;
+}
+
+/* 5. BOTÓN DE WHATSAPP (Alineado siempre abajo) */
 .info-overlay button {
-    margin-top: 6px;
+    margin-top: auto; /* EMPUJA EL BOTÓN AL FINAL: Alinea todos los botones horizontalmente */
     width: 100%;
-    padding: 10px 14px;
-    border-radius: 10px;
-    background: #2563eb;
+    padding: 11px 16px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
     color: #ffffff;
     font-weight: 600;
-    font-size: 0.85rem;
+    font-size: 0.875rem;
+    letter-spacing: 0.01em;
     border: none;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 8px;
-    transition: background-color 0.2s ease, transform 0.2s ease;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+    transition: all 0.2s ease;
 }
 
 .info-overlay button:hover {
-    background: #1d4ed8;
+    background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
+    box-shadow: 0 6px 18px rgba(37, 99, 235, 0.45);
     transform: translateY(-1px);
 }
 
+.info-overlay button:active {
+    transform: translateY(0);
+}
 /* ==========================================================================
    CALL TO ACTION (CTA)
    ========================================================================== */
