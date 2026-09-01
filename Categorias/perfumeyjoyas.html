@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfumería y Joyería | Nidox</title>
+    <link rel="icon" href="../fotos/Nidox.png" type="image/png">
+    <link rel="stylesheet" href="categorias.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo"><img src="../fotos/Nidox.png" alt="Logo Nidox"></div>
+        <div class="navegar">
+           <nav class="nav">
+                <a href="../index.html">Inicio</a>
+                <a href="#buscador">Buscador</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-gastronomia">
+            <h1>Perfumería y Joyas</h1>
+            <p>Encontrá fragancias exclusivas, alta joyería, accesorios en oro y plata y cosmética.</p>
+        </section>
+
+        <section class="buscador" id="buscador">
+            <h2>Buscar negocio</h2>
+            <p>Resaltá tu estilo con la mejor calidad en fragancias y accesorios.</p>
+            <div class="input-buscador">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="buscar" placeholder="Buscar perfumería, joyas, relojes, accesorios...">
+            </div>
+        </section>
+
+        <section class="negocios" id="negocios">
+            <h2>Perfumerías y Joyerías destacadas</h2>
+              <div class="contenedor-negocios">
+                <div class="tarjeta-negocio" data-categoria="joyas perfumes" data-ubicacion="concepcion aguilares">
+                    <img src="../fotos/allbeatuty.jpeg" alt="JoyasyFragancias">
+                    <div class="info-overlay">
+                        <div>
+                            <h3>Maktub</h3>
+                            <p class="categoria">• Perfumes de calidad premium. <br>• Semijoyas folheadas en Oro y Plata. <br>• Excelentes Ganancias!!! <br><br> Asesores Lideres Grace Decima y Dario Infante.</p>
+                            <p class="ubicacion-texto">📍 Ruta 38 Km 735 entre De Pedro y Gomezpardo.</p>
+                            <p class="horario">🕒 Ventas online o visitas a Domicilio. </p>
+                        </div>
+                        <button onclick="abrirWhatsApp('5493865567099')"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
+                    </div>
+                </div>
+                 <div class="tarjeta-negocio" data-categoria="joyas" data-ubicacion="concepcion aguilares">
+                    <img src="../fotos/perlanegra.jpeg" alt="perla negra">
+                    <div class="info-overlay">
+                        <div>
+                            <h3>Maktub</h3>
+                            <p class="categoria">• Joyas de oro 14k y Acero quirúrgico de perla negra. <br>• Garantía de por vida. <br>• Excelentes ganancias!!! <br><br>Lider Grace Decima</p>
+                            <p class="ubicacion-texto">📍 Ruta 38 Km 735 entre De Pedro y Gomezpardo.</p>
+                            <p class="horario">🕒 Ventas online o visitas a Domicilio. </p>
+                        </div>
+                        <button onclick="abrirWhatsApp('5493865567099')"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
+                    </div>
+                </div>
+            </div>
+            <p id="sin-resultados" style="display: none; text-align: center; color: #94a3b8; margin-top: 40px; font-size: 1.1rem;">
+                🔍 No encontramos negocios que coincidan con tu búsqueda. ¡Intentá con otra palabra!
+            </p>
+        </section>
+
+        <section class="cta">
+            <h2>¿Tenés una perfumería o joyería?</h2>
+            <p>Publicala en Nidox y hacé que más personas descubran tu negocio todos los días.</p>
+            <button class="btn-principal" onclick="location.href='https://wa.me/5493865718358?text=Hola,%20quiero%20publicar%20mi%20joyeria%20o%20perfumeria%20en%20Nidox.'">
+                Publicar mi negocio
+            </button>
+        </section>
+    </main>
+
+    <footer id="contacto">
+        <img src="../fotos/Nidox.png" alt="Logo Nidox">
+        <p>© 2026 Nidox - Todos los derechos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
