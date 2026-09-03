@@ -301,6 +301,33 @@ main {
 .info-overlay button:active {
     transform: translateY(0);
 }
+/* 5. BOTÓN DE INSTAGRAM (Alineado siempre abajo) */
+.btn-instagram {
+    margin-top: auto; /* EMPUJA EL BOTÓN AL FINAL: Alinea todos los botones horizontalmente */
+    width: 100%;
+    text-decoration: none;
+    padding: 11px 16px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 0.875rem;
+    letter-spacing: 0.01em;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+    transition: all 0.2s ease;
+}
+
+.btn-instagram:hover {
+  background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
+    box-shadow: 0 6px 18px rgba(37, 99, 235, 0.45);
+    transform: translateY(-1px);
+}
 /* ==========================================================================
    CALL TO ACTION (CTA)
    ========================================================================== */
